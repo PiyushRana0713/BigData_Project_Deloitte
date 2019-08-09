@@ -1,0 +1,464 @@
+Load the data into HDFS, Hive Managed table, Hive External table and Spark DataFrame.
+
+1. Commit the screenshot of the view/result of the top 25 rows from each individual store (HDFS, Hive – Managed/External and Spark DataFrame).
+
+==>MANAGED TABLE OUTPUT
+
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Hungund,587118,F,6,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Bagalkot,587207,M,73,0,1,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Bagalkot,587207,M,6,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Bagalkot,587102,M,56,0,1,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587206,M,44,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587206,M,28,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587206,F,40,1,0,0,0
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587203,M,27,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587201,F,32,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587155,M,67,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587155,F,2,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587114,M,27,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Bihar,Gopalganj,Vijayeepur,841508,M,26,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Assam,Marigaon,Bhuragaon,782121,M,22,1,0,0,1
+Allahabad Bank,Vedavaag Systems Limited,Uttar Pradesh,Bara Banki,Nawabganj,225301,M,8,1,0,0,0
+Allahabad Bank,Transmoovers India,Uttar Pradesh,Varanasi,Varanasi,221002,M,19,1,0,0,1
+Allahabad Bank,Transmoovers India,Uttar Pradesh,Varanasi,Varanasi,221002,M,10,0,1,0,1
+Allahabad Bank,Transmoovers India,Uttar Pradesh,Varanasi,Varanasi,221002,M,4,1,0,0,1
+Allahabad Bank,Transmoovers India,Uttar Pradesh,Varanasi,Varanasi,221001,M,9,1,0,0,1
+Allahabad Bank,Transmoovers India,Uttar Pradesh,Varanasi,Pindra,221101,M,14,1,0,0,1
+Allahabad Bank,Transmoovers India,Uttar Pradesh,Gorakhpur,Sahjanwa,273001,M,8,1,0,0,1
+Allahabad Bank,Sri Ramraja Sarkar Lok Kalyan Trust,Uttar Pradesh,Shamli,Shamli,247775,M,6,1,0,0,1
+Allahabad Bank,SGS INDIA PVT LTD,Uttar Pradesh,Sultanpur,Sultanpur,227812,F,13,1,0,0,1
+Allahabad Bank,Asha Security Guard Services,Uttar Pradesh,Sonbhadra,Robertsganj,231213,M,8,1,0,0,0
+Allahabad Bank,A-Onerealtors Pvt Ltd,Uttar Pradesh,Allahabad,Meja,212303,F,7,1,0,0,1
+===================================================================================================
+
+==>EXTERNAL TABLE OUTPUT
+
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Hungund,587118,F,6,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Bagalkot,587207,M,73,0,1,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Bagalkot,587207,M,6,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Bagalkot,587102,M,56,0,1,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587206,M,44,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587206,M,28,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587206,F,40,1,0,0,0
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587203,M,27,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587201,F,32,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587155,M,67,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587155,F,2,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Karnataka,Bagalkot,Badami,587114,M,27,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Bihar,Gopalganj,Vijayeepur,841508,M,26,1,0,0,1
+Atalji Janasnehi Directorate  Government of Karnataka,Atalji Janasnehi Directorate  GOK,Assam,Marigaon,Bhuragaon,782121,M,22,1,0,0,1
+Allahabad Bank,Vedavaag Systems Limited,Uttar Pradesh,Bara Banki,Nawabganj,225301,M,8,1,0,0,0
+Allahabad Bank,Transmoovers India,Uttar Pradesh,Varanasi,Varanasi,221002,M,19,1,0,0,1
+Allahabad Bank,Transmoovers India,Uttar Pradesh,Varanasi,Varanasi,221002,M,10,0,1,0,1
+Allahabad Bank,Transmoovers India,Uttar Pradesh,Varanasi,Varanasi,221002,M,4,1,0,0,1
+Allahabad Bank,Transmoovers India,Uttar Pradesh,Varanasi,Varanasi,221001,M,9,1,0,0,1
+Allahabad Bank,Transmoovers India,Uttar Pradesh,Varanasi,Pindra,221101,M,14,1,0,0,1
+Allahabad Bank,Transmoovers India,Uttar Pradesh,Gorakhpur,Sahjanwa,273001,M,8,1,0,0,1
+Allahabad Bank,Sri Ramraja Sarkar Lok Kalyan Trust,Uttar Pradesh,Shamli,Shamli,247775,M,6,1,0,0,1
+Allahabad Bank,SGS INDIA PVT LTD,Uttar Pradesh,Sultanpur,Sultanpur,227812,F,13,1,0,0,1
+Allahabad Bank,Asha Security Guard Services,Uttar Pradesh,Sonbhadra,Robertsganj,231213,M,8,1,0,0,0
+Allahabad Bank,A-Onerealtors Pvt Ltd,Uttar Pradesh,Allahabad,Meja,212303,F,7,1,0,0,1
+__________________________________________________________________________________________________
+
+==>SPARK DATA FRAME OUTPUT
++--------------------+--------------------+-------------+----------+------------+-------+------+---+----------------+-------------------+--------------------------+---------------------------------+
+|           Registrar|   Enrollment_Agency|        State|  District|Sub_District|PinCode|Gender|Age|Aadhar_Generated|Enrollment_Rejected|Residents_Providing_Emails|Residents_Providing_Mobile_Number|
++--------------------+--------------------+-------------+----------+------------+-------+------+---+----------------+-------------------+--------------------------+---------------------------------+
+|      Allahabad Bank|A-Onerealtors Pvt...|Uttar Pradesh| Allahabad|        Meja| 212303|     F|  7|               1|                  0|                         0|                                1|
+|      Allahabad Bank|Asha Security Gua...|Uttar Pradesh| Sonbhadra| Robertsganj| 231213|     M|  8|               1|                  0|                         0|                                0|
+|      Allahabad Bank|   SGS INDIA PVT LTD|Uttar Pradesh| Sultanpur|   Sultanpur| 227812|     F| 13|               1|                  0|                         0|                                1|
+|      Allahabad Bank|Sri Ramraja Sarka...|Uttar Pradesh|    Shamli|      Shamli| 247775|     M|  6|               1|                  0|                         0|                                1|
+|      Allahabad Bank|  Transmoovers India|Uttar Pradesh| Gorakhpur|    Sahjanwa| 273001|     M|  8|               1|                  0|                         0|                                1|
+|      Allahabad Bank|  Transmoovers India|Uttar Pradesh|  Varanasi|      Pindra| 221101|     M| 14|               1|                  0|                         0|                                1|
+|      Allahabad Bank|  Transmoovers India|Uttar Pradesh|  Varanasi|    Varanasi| 221001|     M|  9|               1|                  0|                         0|                                1|
+|      Allahabad Bank|  Transmoovers India|Uttar Pradesh|  Varanasi|    Varanasi| 221002|     M|  4|               1|                  0|                         0|                                1|
+|      Allahabad Bank|  Transmoovers India|Uttar Pradesh|  Varanasi|    Varanasi| 221002|     M| 10|               0|                  1|                         0|                                1|
+|      Allahabad Bank|  Transmoovers India|Uttar Pradesh|  Varanasi|    Varanasi| 221002|     M| 19|               1|                  0|                         0|                                1|
+|      Allahabad Bank|Vedavaag Systems ...|Uttar Pradesh|Bara Banki|   Nawabganj| 225301|     M|  8|               1|                  0|                         0|                                0|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|        Assam|  Marigaon|   Bhuragaon| 782121|     M| 22|               1|                  0|                         0|                                1|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|        Bihar| Gopalganj|  Vijayeepur| 841508|     M| 26|               1|                  0|                         0|                                1|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|    Karnataka|  Bagalkot|      Badami| 587114|     M| 27|               1|                  0|                         0|                                1|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|    Karnataka|  Bagalkot|      Badami| 587155|     F|  2|               1|                  0|                         0|                                1|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|    Karnataka|  Bagalkot|      Badami| 587155|     M| 67|               1|                  0|                         0|                                1|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|    Karnataka|  Bagalkot|      Badami| 587201|     F| 32|               1|                  0|                         0|                                1|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|    Karnataka|  Bagalkot|      Badami| 587203|     M| 27|               1|                  0|                         0|                                1|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|    Karnataka|  Bagalkot|      Badami| 587206|     F| 40|               1|                  0|                         0|                                0|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|    Karnataka|  Bagalkot|      Badami| 587206|     M| 28|               1|                  0|                         0|                                1|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|    Karnataka|  Bagalkot|      Badami| 587206|     M| 44|               1|                  0|                         0|                                1|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|    Karnataka|  Bagalkot|    Bagalkot| 587102|     M| 56|               0|                  1|                         0|                                1|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|    Karnataka|  Bagalkot|    Bagalkot| 587207|     M|  6|               1|                  0|                         0|                                1|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|    Karnataka|  Bagalkot|    Bagalkot| 587207|     M| 73|               0|                  1|                         0|                                1|
+|Atalji Janasnehi ...|Atalji Janasnehi ...|    Karnataka|  Bagalkot|     Hungund| 587118|     F|  6|               1|                  0|                         0|                                1|
++--------------------+--------------------+-------------+----------+------------+-------+------+---+----------------+-------------------+--------------------------+---------------------------------+
+
+___________________________________________________________________________________________________
+
+==>OUTPUT 2
+root
+ |-- Registrar: string (nullable = true)
+ |-- Enrollment_Agency: string (nullable = true)
+ |-- State: string (nullable = true)
+ |-- District: string (nullable = true)
+ |-- Sub_District: string (nullable = true)
+ |-- PinCode: string (nullable = true)
+ |-- Gender: string (nullable = true)
+ |-- Age: integer (nullable = false)
+ |-- Aadhar_Generated: integer (nullable = false)
+ |-- Enrollment_Rejected: integer (nullable = false)
+ |-- Residents_Providing_Emails: integer (nullable = false)
+ |-- Residents_Providing_Mobile_Number: integer (nullable = false)
+
+___________________________________________________________________________________________________
+
+==>OUTPUT 3
++--------------------+------+                                                   
+|           registrar| Count|
++--------------------+------+
+|DC ITANAGAR CAPIT...|    38|
+|Department of Inf...|   464|
+|U P Electronics C...|   293|
+|          Union Bank|  5536|
+|CSC e-Governance ...|209771|
+|Madhya Pradesh St...| 17309|
+|Rural Development...|   640|
+|Directorate of Pu...|    23|
+|Director Health a...|   165|
+|         Govt of Goa|   857|
+| Govt. of Uttarkhand|    44|
+|Information Techn...|  3958|
+|Govt of UT of Cha...|    95|
+|            DC LOHIT|   119|
+|    UT of Puducherry|     1|
+|            DC Siang|    38|
+|  FCS Govt of Punjab|   173|
+|Odisha Computer A...|  1701|
+|Punjab National Bank|  1400|
+|           DC NAMSAI|   154|
++--------------------+------+
+
+___________________________________________________________________________________________________
+
+==>OUTPUT 4(A)
++--------------+                                                                
+|COUNT_OF_STATE|
++--------------+
+|        440818|
++--------------+
+
+==>OUTPUT 4(B)
++--------------------+-----------------+                                        
+|               state|Count_Of_District|
++--------------------+-----------------+
+|         Maharashtra|            19783|
+|      Madhya Pradesh|            37360|
+|             Gujarat|            24146|
+|              Sikkim|               48|
+|          Chandigarh|              199|
+|               Bihar|            81776|
+|       Daman and Diu|               99|
+|Dadra and Nagar H...|              107|
+|      Andhra Pradesh|             4540|
+|             Tripura|              726|
+|              Odisha|            11972|
+|             Haryana|             5138|
+|   Arunachal Pradesh|              632|
+|              Others|               12|
+|             Manipur|              562|
+|         Uttarakhand|             6521|
+|Andaman and Nicob...|                7|
+|          Puducherry|               85|
+|          Tamil Nadu|            21196|
+|         West Bengal|            60485|
++--------------------+-----------------+
+
+==>OUTPUT 4(C)
++-----------------+---------------------+                                       
+|         district|Count_Of_Sub_District|
++-----------------+---------------------+
+|           Shamli|                  439|
+|North 24 Parganas|                 6894|
+|         Bilaspur|                  388|
+|           Jorhat|                   54|
+|        Champawat|                  207|
+|          Nuapada|                  184|
+|           Haveri|                  337|
+|       Villupuram|                  685|
+|        Dantewada|                   31|
+|        Sonbhadra|                  308|
+|       Aurangabad|                 1769|
+|          Jamtara|                  170|
+|        Bhavnagar|                  879|
+|       Sepahijala|                  183|
+|           Ganjam|                 1280|
+|          Koraput|                  232|
+|          Chirang|                  106|
+|         Adilabad|                  180|
+|  Devbhumi Dwarka|                  274|
+|      Muzaffarpur|                 1662|
++-----------------+---------------------+
+___________________________________________________________________________________________________
+
+==> OUTPUT 5
++--------------------+------+-----+                                             
+|               state|gender|Count|
++--------------------+------+-----+
+|Andaman and Nicob...|     F|    5|
+|Andaman and Nicob...|     M|    2|
+|      Andhra Pradesh|     F| 1048|
+|      Andhra Pradesh|     M| 3492|
+|   Arunachal Pradesh|     F|  210|
+|   Arunachal Pradesh|     M|  422|
+|               Assam|     F|  302|
+|               Assam|     M| 2670|
+|               Bihar|     F|26957|
+|               Bihar|     M|54819|
+|          Chandigarh|     F|   53|
+|          Chandigarh|     M|  146|
+|        Chhattisgarh|     F| 1346|
+|        Chhattisgarh|     M| 3271|
+|Dadra and Nagar H...|     F|   44|
+|Dadra and Nagar H...|     M|   63|
+|       Daman and Diu|     F|   19|
+|       Daman and Diu|     M|   80|
+|               Delhi|     F| 2649|
+|               Delhi|     M| 4598|
++--------------------+------+-----+
+
+
+___________________________________________________________________________________________________
+
+==>OUTPUT 6
++--------------------+--------------------+-----+                               
+|               state|   enrollment_agency|Count|
++--------------------+--------------------+-----+
+|Andaman and Nicob...|AKSH OPTIFIBRE LI...|    1|
+|Andaman and Nicob...|        Computer LAB|    1|
+|Andaman and Nicob...|PROTEX COMPUTER P...|    2|
+|Andaman and Nicob...|VEETECHNOLOGIES P...|    2|
+|Andaman and Nicob...|           Wipro Ltd|    1|
+|      Andhra Pradesh|77 Infosystems Pv...|    2|
+|      Andhra Pradesh|      AISECT Limited|    1|
+|      Andhra Pradesh|AKSH OPTIFIBRE LI...|    2|
+|      Andhra Pradesh|    APOnline Limited|   93|
+|      Andhra Pradesh|AVVAS INFOTECH PV...|   13|
+|      Andhra Pradesh|Abha Systems And ...|    2|
+|      Andhra Pradesh|             Akshaya|    3|
+|      Andhra Pradesh|  Alankit Finsec Ltd|    1|
+|      Andhra Pradesh|   BNR UDYOG LIMITED|  138|
+|      Andhra Pradesh|               CHIPS|    2|
+|      Andhra Pradesh|   CMS Computers Ltd|    2|
+|      Andhra Pradesh|             CSC SPV|  671|
+|      Andhra Pradesh|CSC e-Governance ...|   22|
+|      Andhra Pradesh|Centre for e-Gove...|    8|
+|      Andhra Pradesh|City Hawks Manpow...|   74|
++--------------------+--------------------+-----+
+
+___________________________________________________________________________________________________
+
+==>OUTPUT 7
+
++-------------+------+                                                          
+|        State|   Sum|
++-------------+------+
+|        Bihar|162607|
+|  West Bengal|119901|
+|Uttar Pradesh|103767|
++-------------+------+
+___________________________________________________________________________________________________
+
+==>OUTPUT 8
+
++--------------------+------+                                                   
+|   Enrollment_Agency|   Sum|
++--------------------+------+
+|             CSC SPV|173192|
+|           Wipro Ltd| 39619|
+|SREI INFRASTRUCTU...| 26497|
++--------------------+------+
+___________________________________________________________________________________________________
+
+==>OUTPUT 9
+
++---------------------------------+----------------------------------------+    
+|Sum_of_Residents_Providing_Emails|Sum_of_Residents_Providing_Mobile_Number|
++---------------------------------+----------------------------------------+
+|                            19464|                                  464841|
++---------------------------------+----------------------------------------+
+___________________________________________________________________________________________________
+
+==>OUTPUT 10
++-----------------+-----------------+                                           
+|         District|Enrollment_Number|
++-----------------+-----------------+
+|South 24 Parganas|            16901|
+|       Barddhaman|            16328|
+|        Bhagalpur|            15064|
++-----------------+-----------------+
+___________________________________________________________________________________________________
+
+==>OUTPUT 11
+
++--------------------+-----------------------+                                  
+|               State|Sum_of_Aadhar_Generated|
++--------------------+-----------------------+
+|Andaman and Nicob...|                      5|
+|      Andhra Pradesh|                   5798|
+|   Arunachal Pradesh|                    913|
+|               Assam|                   3213|
+|               Bihar|                 162607|
+|          Chandigarh|                    259|
+|        Chhattisgarh|                   6604|
+|Dadra and Nagar H...|                    140|
+|       Daman and Diu|                    105|
+|               Delhi|                   8426|
+|                 Goa|                   1167|
+|             Gujarat|                  34844|
+|             Haryana|                   6804|
+|    Himachal Pradesh|                   1547|
+|   Jammu and Kashmir|                   1234|
+|           Jharkhand|                   9868|
+|           Karnataka|                  19764|
+|              Kerala|                  15143|
+|         Lakshadweep|                      4|
+|      Madhya Pradesh|                  53276|
++--------------------+-----------------------+
+
+___________________________________________________________________________________________________
+
+==>OUTPUT 12
+
+root
+ |-- Registrar: string (nullable = true)
+ |-- Enrollment_Agency: string (nullable = true)
+ |-- State: string (nullable = true)
+ |-- District: string (nullable = true)
+ |-- Sub_District: string (nullable = true)
+ |-- PinCode: string (nullable = true)
+ |-- Gender: string (nullable = true)
+ |-- Age: integer (nullable = false)
+ |-- Aadhar_Generated: integer (nullable = false)
+ |-- Enrollment_Rejected: integer (nullable = false)
+ |-- Residents_Providing_Emails: integer (nullable = false)
+ |-- Residents_Providing_Mobile_Number: integer (nullable = false)
+___________________________________________________________________________________________________
+
+==>OUTPUT 13
+
++--------------------+                                                          
+|         Correlation|
++--------------------+
+|-0.11754461896889756|
++--------------------+
+___________________________________________________________________________________________________
+
+==>OUTPUT 14
+
++--------------+                                                                
+|Unique_Pincode|
++--------------+
+|        585415|
+|        575001|
+|        581400|
+|        228141|
+|        456003|
+|        851211|
+|        841410|
+|        276139|
+|        272124|
+|        222129|
+|        226026|
+|        713502|
+|        700038|
+|        741123|
+|        743194|
+|        680301|
+|        624402|
+|        639109|
+|        614601|
+|        625582|
++--------------+
+___________________________________________________________________________________________________
+
+==>OUTPUT 15
+
++-------------+----------------------+                                          
+|        State|Registeration_Rejected|
++-------------+----------------------+
+|  Maharashtra|                  1818|
+|Uttar Pradesh|                  5286|
++-------------+----------------------+
+___________________________________________________________________________________________________
+
+==>OUTPUT 16
+
++--------------------+--------------------+                                     
+
+|               state|Percentage_of_aadhar|
+
++--------------------+--------------------+
+
+|Andaman and Nicob...|               100.0|
+
+|              Others|               100.0|
+
+|         Lakshadweep|               100.0|
+
++--------------------+--------------------+
+___________________________________________________________________________________________________
+
+==>OUTPUT 17
+
++--------------------+--------------------+----------------------+              
+
+|               state|            district|Percentage_of_rejected|
+
++--------------------+--------------------+----------------------+
+
+|Andaman and Nicob...|       South Andaman|                  50.0|
+
+|Andaman and Nicob...|North And Middle ...|                 33.33|
+
+|         Lakshadweep|         Lakshadweep|                  20.0|
+
+|              Others|              Others|                   0.0|
+
++--------------------+--------------------+----------------------+
+___________________________________________________________________________________________________
+
+==>OUTPUT 18
+
++--------------------+--------------------+                                     
+
+|               state|Percentage_of_aadhar|
+
++--------------------+--------------------+
+
+|Dadra and Nagar H...|               100.0|
+
+|              Sikkim|               100.0|
+
+|              Others|               100.0|
+
++--------------------+--------------------+
+___________________________________________________________________________________________________
+
+==>OUTPUT 19
+
++--------------------+--------------------+                                     
+
+|               state|Percentage_of_aadhar|
+
++--------------------+--------------------+
+
+|Dadra and Nagar H...|               100.0|
+
+|              Sikkim|               100.0|
+
+|              Others|               100.0|
+
++--------------------+--------------------+
+___________________________________________________________________________________________________
+
+==>OUTPUT 20
+
+94.82
